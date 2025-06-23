@@ -130,7 +130,7 @@ const y_Access = xs.map(x => [x, (params.A / 100) * Math.sin(Math.PI * x / 100)]
 
 ---
 
-## ⚙️ Frontend Usage
+## ⚙️ Frontend 
 
 - Renders dropdown to choose model
 - Dynamically builds sliders from parameter list
@@ -139,18 +139,19 @@ const y_Access = xs.map(x => [x, (params.A / 100) * Math.sin(Math.PI * x / 100)]
 
 ---
 
-## 🧱 Scalability Notes
+## ⚙️ Running the React App
 
-- Add new models by simply creating CSVs for parameters and functions and registering them in `models.csv`
-- `functions.js` is fully regenerated on pipeline run — no manual edits needed
-- Expression parsing uses `substitute_js_vars()` to safely convert variable names to `params.<symbol>`
+- navigate in command prompt to the 01_App folder
+- run:
+npm install
+npm start
 
 ---
 
 ## 🚀 Run the Pipeline
 
 - Open the ipynb notebook and run the main cell
-
+- Add new models by simply creating CSVs for parameters and functions and registering them in `models.csv`
 
 ---
 
