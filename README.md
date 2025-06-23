@@ -16,7 +16,7 @@ The system allows you to define simple mathematical models through two inputs:
 - **Parameter CSV**: defines user-adjustable variables
 - **Function CSV**: defines output expressions and chart usage
 
-The Python pipeline then compiles these into frontend-ready visualizations with sliders, tooltips, and annotations.
+The Python pipeline then compiles these into frontend-ready visualizations with parametric sliders linked to the charts.
 
 ---
 
@@ -117,7 +117,7 @@ function compute_access001(params) {
   const series = [];
   series.push({ name: 'Access Index', type: 'bar', data: [ (params.A / 100) * (params.B / 24) ] });
   series.push({ name: 'Reliability Index', type: 'bar', data: [ Math.min(1, params.B / 12) ] });
-  return { series, annotation: "Energy Access Model" };
+  return { series};
 }
 ```
 

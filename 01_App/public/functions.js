@@ -3,7 +3,7 @@ function compute_access001(params) {
   const series = [];
   series.push({ name: 'Access Index', type: 'bar', data: [ (params.E / 100) * (params.H / 24) ] });
   series.push({ name: 'Reliability Index', type: 'bar', data: [ Math.min(1, params.H / 12) ] });
-  return { series, annotation: 'Access vs Reliability' };
+  return { series};
 }
 
 // === cost002 ===
@@ -13,7 +13,7 @@ function compute_cost002(params) {
   const y_Total_Cost = xs.map(x => [x, params.F * (100 / params.T)]);
   series.push({ name: 'Total Cost', type: 'line', data: y_Total_Cost });
   const xAxis = xs;
-  return { series, annotation: 'Clean Cooking Cost Curve', xAxis };
+  return { series, xAxis };
 }
 
 // === pie003 ===
@@ -26,7 +26,7 @@ function compute_pie003(params) {
     { name: 'Nuclear', value: params.N }
     ]
   });
-  return { series, annotation: 'Energy Mix Share' };
+  return { series};
 }
 
 // === stack004 ===
@@ -34,7 +34,7 @@ function compute_stack004(params) {
   const series = [];
   series.push({ name: 'Solar', type: 'bar', stack: 'stack', data: [ params.S ] });
   series.push({ name: 'Wind', type: 'bar', stack: 'stack', data: [ params.W ] });
-  return { series, annotation: 'Investment Stacks by Sector' };
+  return { series};
 }
 
 // === multi005 ===
@@ -46,5 +46,5 @@ function compute_multi005(params) {
   const y_Logarithmic_Growth = xs.map(x => [x, (params.B / 100) * Math.log(x + 1)]);
   series.push({ name: 'Logarithmic Growth', type: 'line', data: y_Logarithmic_Growth });
   const xAxis = xs;
-  return { series, annotation: 'Multiline Test', xAxis };
+  return { series, xAxis };
 }
