@@ -1,0 +1,4 @@
+symbol,title,description,unit,type,min,max,default,interval
+R,Renewables,Renewable share,%,discrete,0,100,30,10
+F,Fossil Fuels,Fossil share,%,discrete,0,100,50,10
+N,Nuclear,Nuclear share,%,discrete,0,100,20,10

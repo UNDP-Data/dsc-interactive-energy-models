@@ -1,0 +1,3 @@
+symbol,title,description,unit,type,min,max,default,interval
+A,Curve A Factor,Curve A Factor input parameter,%,continuous,0,100,60,10
+B,Curve B Factor,Curve B Factor input parameter,%,continuous,0,100,50,10

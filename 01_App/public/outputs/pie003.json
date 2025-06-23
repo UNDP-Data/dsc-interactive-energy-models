@@ -1,0 +1,84 @@
+{
+  "template_id": "model",
+  "color_scheme": "dark",
+  "content": {
+    "functionName": "compute_pie003",
+    "title": "Energy Mix Share",
+    "description": "Share of energy supply types in total energy mix.",
+    "latex-functions": [
+      "R = R",
+      "F = F",
+      "N = N"
+    ],
+    "option": {
+      "tooltip": {
+        "trigger": "item"
+      },
+      "series": []
+    },
+    "parameters": [
+      {
+        "symbol": "R",
+        "title": "Renewables",
+        "description": "Renewable share",
+        "unit": "%",
+        "type": "discrete",
+        "min": 0.0,
+        "max": 100.0,
+        "default": 30.0,
+        "interval": 10.0
+      },
+      {
+        "symbol": "F",
+        "title": "Fossil Fuels",
+        "description": "Fossil share",
+        "unit": "%",
+        "type": "discrete",
+        "min": 0.0,
+        "max": 100.0,
+        "default": 50.0,
+        "interval": 10.0
+      },
+      {
+        "symbol": "N",
+        "title": "Nuclear",
+        "description": "Nuclear share",
+        "unit": "%",
+        "type": "discrete",
+        "min": 0.0,
+        "max": 100.0,
+        "default": 20.0,
+        "interval": 10.0
+      }
+    ],
+    "outputs": [
+      {
+        "symbol": "R",
+        "title": "Renewables",
+        "description": "Renewable share",
+        "unit": "%",
+        "target": 40.0,
+        "direction": "above",
+        "chart_usage": "segment_value"
+      },
+      {
+        "symbol": "F",
+        "title": "Fossils",
+        "description": "Fossil share",
+        "unit": "%",
+        "target": 40.0,
+        "direction": "below",
+        "chart_usage": "segment_value"
+      },
+      {
+        "symbol": "N",
+        "title": "Nuclear",
+        "description": "Nuclear share",
+        "unit": "%",
+        "target": 20.0,
+        "direction": "below",
+        "chart_usage": "segment_value"
+      }
+    ]
+  }
+}

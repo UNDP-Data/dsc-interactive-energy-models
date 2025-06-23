@@ -1,0 +1,3 @@
+symbol,title,description,unit,type,min,max,default,interval
+E,Electrification %,Share of population with electricity,%,discrete,0,100,60,5
+H,Avg Hours/Day,Average electricity availability per day,h,continuous,0,24,10,

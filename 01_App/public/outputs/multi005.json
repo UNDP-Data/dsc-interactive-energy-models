@@ -1,0 +1,69 @@
+{
+  "template_id": "model",
+  "color_scheme": "dark",
+  "content": {
+    "functionName": "compute_multi005",
+    "title": "Multiline Test",
+    "description": "Test of multiline functionality",
+    "latex-functions": [
+      "Y1 = \\left( \\frac{A}{100} \\right)  \\cdot  Math.sin\\left( Math.PI  \\cdot  \\frac{x}{100} \\right)  \\cdot  10",
+      "Y2 = \\left( \\frac{B}{100} \\right)  \\cdot  Math.log\\left( x + 1 \\right)"
+    ],
+    "option": {
+      "xAxis": {
+        "type": "value"
+      },
+      "yAxis": {
+        "type": "value"
+      },
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "series": []
+    },
+    "parameters": [
+      {
+        "symbol": "A",
+        "title": "Curve A Factor",
+        "description": "Curve A Factor input parameter",
+        "unit": "%",
+        "type": "continuous",
+        "min": 0.0,
+        "max": 100.0,
+        "default": 60.0,
+        "interval": 10.0
+      },
+      {
+        "symbol": "B",
+        "title": "Curve B Factor",
+        "description": "Curve B Factor input parameter",
+        "unit": "%",
+        "type": "continuous",
+        "min": 0.0,
+        "max": 100.0,
+        "default": 50.0,
+        "interval": 10.0
+      }
+    ],
+    "outputs": [
+      {
+        "symbol": "Y1",
+        "title": "Sine Impact",
+        "description": "Sine Impact output parameter",
+        "unit": "-",
+        "target": 5.0,
+        "direction": "above",
+        "chart_usage": "y_value"
+      },
+      {
+        "symbol": "Y2",
+        "title": "Logarithmic Growth",
+        "description": "Logarithmic Growth output parameter",
+        "unit": "-",
+        "target": 4.0,
+        "direction": "above",
+        "chart_usage": "y_value"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+output_symbol,title,description,unit,target,direction,js_equation,chart_usage
+S,Solar,Solar stack,M$,250,above,S,bar_stack_component
+W,Wind,Wind stack,M$,200,above,W,bar_stack_component

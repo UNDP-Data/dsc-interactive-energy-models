@@ -1,0 +1,3 @@
+output_symbol,title,description,unit,target,direction,js_equation,chart_usage
+A,Access Index,Composite access score,-,0.8,above,(E / 100) * (H / 24),bar_category
+R,Reliability Index,Reliability score,-,0.9,above,"Math.min(1, H / 12)",bar_category

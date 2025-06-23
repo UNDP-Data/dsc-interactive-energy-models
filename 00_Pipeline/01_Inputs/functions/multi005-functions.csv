@@ -1,0 +1,3 @@
+output_symbol,title,description,unit,target,direction,chart_usage,js_equation
+Y1,Sine Impact,Sine Impact output parameter,-,5.0,above,y_value,(A / 100) * Math.sin(Math.PI * x / 100) * 10
+Y2,Logarithmic Growth,Logarithmic Growth output parameter,-,4.0,above,y_value,(B / 100) * Math.log(x + 1)

@@ -1,0 +1,2 @@
+output_symbol,title,description,unit,target,direction,js_equation,chart_usage
+C,Total Cost,Total cost per meal,$,0.2,below,F * (100 / T),y_value

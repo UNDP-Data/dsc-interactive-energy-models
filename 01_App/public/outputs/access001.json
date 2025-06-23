@@ -1,0 +1,69 @@
+{
+  "template_id": "model",
+  "color_scheme": "dark",
+  "content": {
+    "functionName": "compute_access001",
+    "title": "Access vs Reliability",
+    "description": "Explores links between access and reliability.",
+    "latex-functions": [
+      "A = \\left( \\frac{E}{100} \\right)  \\cdot  \\left( \\frac{H}{24} \\right)",
+      "R = \\min\\left( 1, \\frac{H}{12} \\right)"
+    ],
+    "option": {
+      "xAxis": {
+        "type": "category"
+      },
+      "yAxis": {
+        "type": "value"
+      },
+      "tooltip": {
+        "trigger": "item"
+      },
+      "series": []
+    },
+    "parameters": [
+      {
+        "symbol": "E",
+        "title": "Electrification %",
+        "description": "Share of population with electricity",
+        "unit": "%",
+        "type": "discrete",
+        "min": 0.0,
+        "max": 100.0,
+        "default": 60.0,
+        "interval": 5.0
+      },
+      {
+        "symbol": "H",
+        "title": "Avg Hours/Day",
+        "description": "Average electricity availability per day",
+        "unit": "h",
+        "type": "continuous",
+        "min": 0.0,
+        "max": 24.0,
+        "default": 10.0,
+        "interval": ""
+      }
+    ],
+    "outputs": [
+      {
+        "symbol": "A",
+        "title": "Access Index",
+        "description": "Composite access score",
+        "unit": "-",
+        "target": 0.8,
+        "direction": "above",
+        "chart_usage": "bar_category"
+      },
+      {
+        "symbol": "R",
+        "title": "Reliability Index",
+        "description": "Reliability score",
+        "unit": "-",
+        "target": 0.9,
+        "direction": "above",
+        "chart_usage": "bar_category"
+      }
+    ]
+  }
+}

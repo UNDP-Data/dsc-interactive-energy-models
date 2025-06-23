@@ -1,0 +1,69 @@
+{
+  "template_id": "model",
+  "color_scheme": "dark",
+  "content": {
+    "functionName": "compute_stack004",
+    "title": "Investment Stacks by Sector",
+    "description": "Distribution of investment across energy sectors.",
+    "latex-functions": [
+      "S = S",
+      "W = W"
+    ],
+    "option": {
+      "xAxis": {
+        "type": "category"
+      },
+      "yAxis": {
+        "type": "value"
+      },
+      "tooltip": {
+        "trigger": "item"
+      },
+      "series": []
+    },
+    "parameters": [
+      {
+        "symbol": "S",
+        "title": "Solar Investment",
+        "description": "Investment in solar",
+        "unit": "M$",
+        "type": "discrete",
+        "min": 0.0,
+        "max": 500.0,
+        "default": 200.0,
+        "interval": 50.0
+      },
+      {
+        "symbol": "W",
+        "title": "Wind Investment",
+        "description": "Investment in wind",
+        "unit": "M$",
+        "type": "discrete",
+        "min": 0.0,
+        "max": 500.0,
+        "default": 150.0,
+        "interval": 50.0
+      }
+    ],
+    "outputs": [
+      {
+        "symbol": "S",
+        "title": "Solar",
+        "description": "Solar stack",
+        "unit": "M$",
+        "target": 250.0,
+        "direction": "above",
+        "chart_usage": "bar_stack_component"
+      },
+      {
+        "symbol": "W",
+        "title": "Wind",
+        "description": "Wind stack",
+        "unit": "M$",
+        "target": 200.0,
+        "direction": "above",
+        "chart_usage": "bar_stack_component"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+output_symbol,title,description,unit,target,direction,js_equation,chart_usage
+R,Renewables,Renewable share,%,40,above,R,segment_value
+F,Fossils,Fossil share,%,40,below,F,segment_value
+N,Nuclear,Nuclear share,%,20,below,N,segment_value

@@ -1,0 +1,3 @@
+symbol,title,description,unit,type,min,max,default,interval
+T,Technology Efficiency,Efficiency of the cookstove,%,x-axis,10,100,50.0,10
+F,Fuel Cost,Cost of fuel per kg,$,fixed,,,0.5,
