@@ -9,7 +9,7 @@ These are rendered dynamically in a chart-agnostic React frontend using [ECharts
 
 ---
 
-## 🧠 Overview
+## Overview
 
 The system allows you to define simple mathematical models through two inputs:
 
@@ -149,8 +149,7 @@ const y_Access = xs.map(x => [x, (params.A / 100) * Math.sin(Math.PI * x / 100)]
 
 ## 🚀 Run the Pipeline
 
-```Open the notebook and run the main cell
-```
+- Open the ipynb notebook and run the main cell
 
 
 ---
