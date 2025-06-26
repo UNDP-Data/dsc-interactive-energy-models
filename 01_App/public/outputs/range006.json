@@ -1,0 +1,72 @@
+{
+  "template_id": "model",
+  "color_scheme": "dark",
+  "content": {
+    "functionName": "compute_range006",
+    "title": "Energy Demand Range Model",
+    "description": "Estimates the range of total energy use based on varying population sizes and energy consumption per person.",
+    "latexFunctions": [
+      "E_min = N_min  \\cdot  F",
+      "E_max = N_max  \\cdot  F"
+    ],
+    "option": {
+      "xAxis": {
+        "type": "category"
+      },
+      "yAxis": {
+        "type": "value"
+      },
+      "tooltip": {
+        "trigger": "item"
+      },
+      "series": []
+    },
+    "parameters": [
+      {
+        "symbol": "N",
+        "title": "Population Size",
+        "description": "Population size (millions)",
+        "unit": "million",
+        "type": "range",
+        "min": 10.0,
+        "max": 100.0,
+        "default": 50.0,
+        "targetType": "any",
+        "rangeMin": 20.0,
+        "rangeMax": 80.0
+      },
+      {
+        "symbol": "F",
+        "title": "Energy Factor",
+        "description": "Energy consumption per person",
+        "unit": "kWh",
+        "type": "continuous",
+        "min": 0.1,
+        "max": 2.0,
+        "default": 1.0,
+        "targetType": "any"
+      }
+    ],
+    "outputs": [
+      {
+        "symbol": "E_min",
+        "title": "Min Energy Use",
+        "description": "Minimum total energy use",
+        "unit": "GWh",
+        "target": 1000.0,
+        "direction": "increase",
+        "chart_usage": "bar_category"
+      },
+      {
+        "symbol": "E_max",
+        "title": "Max Energy Use",
+        "description": "Maximum total energy use",
+        "unit": "GWh",
+        "target": 2000.0,
+        "direction": "increase",
+        "chart_usage": "bar_category"
+      }
+    ],
+    "targetType": "any"
+  }
+}

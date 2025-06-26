@@ -1,0 +1,6 @@
+symbol,title,description,unit,type,min,max,default,interval
+C,Capital Cost,Total capital cost of the project,$/kW,x-axis,0,2000,1000,40
+R,Capital Recovery Factor,CRF based on discount rate and project lifetime,-,scenario,,,,
+F,Fixed O&M Cost,Annual fixed operation and maintenance cost,$,continuous,0,100,20,
+E,Annual Energy Production,Total energy generated per year,kWh,continuous,1000,10000,5000,
+V,Variable O&M Cost,Variable operation and maintenance cost per kWh,$/kWh,continuous,0,1000,100,

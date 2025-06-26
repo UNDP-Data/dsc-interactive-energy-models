@@ -5,7 +5,7 @@
     "functionName": "compute_stack004",
     "title": "Investment Stacks by Sector",
     "description": "Distribution of investment across energy sectors.",
-    "latex-functions": [
+    "latexFunctions": [
       "S = S",
       "W = W"
     ],
@@ -31,6 +31,7 @@
         "min": 0.0,
         "max": 500.0,
         "default": 200.0,
+        "targetType": "any",
         "interval": 50.0
       },
       {
@@ -42,6 +43,7 @@
         "min": 0.0,
         "max": 500.0,
         "default": 150.0,
+        "targetType": "any",
         "interval": 50.0
       }
     ],
@@ -64,6 +66,7 @@
         "direction": "above",
         "chart_usage": "bar_stack_component"
       }
-    ]
+    ],
+    "targetType": "any"
   }
 }

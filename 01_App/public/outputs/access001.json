@@ -5,7 +5,7 @@
     "functionName": "compute_access001",
     "title": "Access vs Reliability",
     "description": "Explores links between access and reliability.",
-    "latex-functions": [
+    "latexFunctions": [
       "A = \\left( \\frac{E}{100} \\right)  \\cdot  \\left( \\frac{H}{24} \\right)",
       "R = \\min\\left( 1, \\frac{H}{12} \\right)"
     ],
@@ -31,6 +31,7 @@
         "min": 0.0,
         "max": 100.0,
         "default": 60.0,
+        "targetType": "any",
         "interval": 5.0
       },
       {
@@ -42,7 +43,7 @@
         "min": 0.0,
         "max": 24.0,
         "default": 10.0,
-        "interval": ""
+        "targetType": "any"
       }
     ],
     "outputs": [
@@ -64,6 +65,7 @@
         "direction": "above",
         "chart_usage": "bar_category"
       }
-    ]
+    ],
+    "targetType": "any"
   }
 }

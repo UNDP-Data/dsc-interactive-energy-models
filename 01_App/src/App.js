@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactECharts from "echarts-for-react";
 
-const models = ["access001", "cost002", "pie003", "stack004", "multi005"];
+const models = ["access001", "lcoe001", "pie003", "stack004", "multi005","range006"];
 
 const App = () => {
   const [model, setModel] = useState(null);

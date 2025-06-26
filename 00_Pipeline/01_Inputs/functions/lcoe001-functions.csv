@@ -1,0 +1,4 @@
+output_symbol,title,description,unit,target,direction,chart_usage,js_equation,variable
+LCOE_5,LCOE at CRF 5%,Levelized cost of energy assuming 5% capital recovery factor,$/kWh,,,y_value,((C * R + F) / (E - V)),0.05
+LCOE_7,LCOE at CRF 7%,Levelized cost of energy assuming 7% capital recovery factor,$/kWh,,,y_value,((C * R + F) / (E - V)),0.06
+LCOE_10,LCOE at CRF 10%,Levelized cost of energy assuming 10% capital recovery factor,$/kWh,,,y_value,((C * R + F) / (E - V)),0.1

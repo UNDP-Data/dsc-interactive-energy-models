@@ -1,6 +1,7 @@
 code,title,summary,prompt_question,chart_type
 access001,Access vs Reliability,Explores links between access and reliability.,How does increasing access affect reliability?,bar_category
-cost002,Clean Cooking Cost Curve,A model exploring costs of cooking options.,What’s the most cost-effective clean cooking mix?,line_chart
 pie003,Energy Mix Share,Share of energy supply types in total energy mix.,How is energy supply shared among sources?,pie_chart
 stack004,Investment Stacks by Sector,Distribution of investment across energy sectors.,Which sectors receive most investment?,stacked_bar
 multi005,Multiline Test,Test of multiline functionality,How does multiline charting work?,multi_line
+lcoe001,LCOE Multiline Model,Shows how Levelized Cost of Energy varies with capital cost under different financing scenarios.,LCOE?,multi_line
+range006,Energy Demand Range Model,Estimates the range of total energy use based on varying population sizes and energy consumption per person.,Range test?,bar_category

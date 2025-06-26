@@ -1,0 +1,3 @@
+output_symbol,title,description,unit,target,direction,chart_usage,js_equation
+E_min,Min Energy Use,Minimum total energy use,GWh,1000,increase,bar_category,N_min * F
+E_max,Max Energy Use,Maximum total energy use,GWh,2000,increase,bar_category,N_max * F

@@ -5,7 +5,7 @@
     "functionName": "compute_pie003",
     "title": "Energy Mix Share",
     "description": "Share of energy supply types in total energy mix.",
-    "latex-functions": [
+    "latexFunctions": [
       "R = R",
       "F = F",
       "N = N"
@@ -26,6 +26,7 @@
         "min": 0.0,
         "max": 100.0,
         "default": 30.0,
+        "targetType": "any",
         "interval": 10.0
       },
       {
@@ -37,6 +38,7 @@
         "min": 0.0,
         "max": 100.0,
         "default": 50.0,
+        "targetType": "any",
         "interval": 10.0
       },
       {
@@ -48,6 +50,7 @@
         "min": 0.0,
         "max": 100.0,
         "default": 20.0,
+        "targetType": "any",
         "interval": 10.0
       }
     ],
@@ -79,6 +82,7 @@
         "direction": "below",
         "chart_usage": "segment_value"
       }
-    ]
+    ],
+    "targetType": "any"
   }
 }

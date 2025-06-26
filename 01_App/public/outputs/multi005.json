@@ -5,7 +5,7 @@
     "functionName": "compute_multi005",
     "title": "Multiline Test",
     "description": "Test of multiline functionality",
-    "latex-functions": [
+    "latexFunctions": [
       "Y1 = \\left( \\frac{A}{100} \\right)  \\cdot  Math.sin\\left( Math.PI  \\cdot  \\frac{x}{100} \\right)  \\cdot  10",
       "Y2 = \\left( \\frac{B}{100} \\right)  \\cdot  Math.log\\left( x + 1 \\right)"
     ],
@@ -31,7 +31,7 @@
         "min": 0.0,
         "max": 100.0,
         "default": 60.0,
-        "interval": 10.0
+        "targetType": "any"
       },
       {
         "symbol": "B",
@@ -42,7 +42,7 @@
         "min": 0.0,
         "max": 100.0,
         "default": 50.0,
-        "interval": 10.0
+        "targetType": "any"
       }
     ],
     "outputs": [
@@ -64,6 +64,7 @@
         "direction": "above",
         "chart_usage": "y_value"
       }
-    ]
+    ],
+    "targetType": "any"
   }
 }
